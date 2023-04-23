@@ -1,7 +1,7 @@
 const mysql = require("mysql");
 
 var connection = mysql.createPool({
-    host: 'localhost',
+    host: 'Oak',
     user: 'root',
     password: 'Oakbymarwin2545',
     database: 'vacCenter'

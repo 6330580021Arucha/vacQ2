@@ -6,11 +6,11 @@ const vacCenter = require('../models/VacCenter')
 //access    Public
 exports.getVacCenters = (req, res, next) => {
     vacCenter.getAll((err, data) => {
-        if(err){
+        if(err) {
             res.status(500).send({
-                message: err.message || "Some error occurred while retrieving Vaccine Centers."
+                message: err.message || "Some erre occurred while retrieving vaccine Centers."
             });
-        }else{
+        } else {
             res.send(data);
         }
     });
